@@ -8,11 +8,11 @@ let arr = [
 
 function PrintDeveloperbyMap() {
   //Write your code here , just console.log
-   return arr.map((id) => {
-     if (id.profession === "developer") {
-       console.log(id.name);
-     }
-   });
+  return arr.map((id) => {
+    if (id.profession === "developer") {
+      console.log(id.name);
+    }
+  });
 }
 
 function PrintDeveloperbyForEach() {
@@ -34,16 +34,18 @@ function addData() {
   };
   arr.push(data);
   console.log(arr);
-
 }
 
 function removeAdmin() {
   //Write your code here, just console.log
-  
-  
+  arr = arr.filter((id) => {
+    if (id.profession !== "admin") {
+      return id.name;
+    }
+  });
+  console.log(arr);
 }
 
 function concatenateArray() {
   //Write your code here, just console.log
-
 }
